@@ -9,7 +9,7 @@ const PHONE_INTL = "+201009260259";
 const WA_NUMBER = "201009260259";
 const WA_MSG = "مرحباً، أرغب في الاستفسار عن هاسيندا رأس الحكمة - بالم هيلز";
 const WA_URL = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_MSG)}`;
-const WEB3_KEY = "d9f0bdd4-167d-43fb-9828-a23db6ee8874";
+const WEB3_KEY = "7955729f-84bd-426b-b872-18613fe46c8f";
 
 const NAV_LINKS = [
   { label: "عن المشروع", href: "#overview" },
