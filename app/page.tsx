@@ -372,7 +372,11 @@ export default function Home() {
           <h3> وكيل معتمد من بالم هيلز</h3>
           <p> وكيل مبيعات معتمد من شركة بالم هيلز للتطوير العقاري. نقدم خدمات استشارية عقارية مجانية ونساعد العملاء في اختيار الوحدة المناسبة وإتمام إجراءات الحجز والتعاقد مع المطور مباشرة.</p>
           <p>جميع الأسعار المذكورة في هذا الموقع استرشادية وقابلة للتغيير من قِبل شركة بالم هيلز للتطوير العقاري دون إشعار مسبق. الأسعار النهائية وشروط التعاقد تُحدد من المطور مباشرة عند التعاقد.</p>
+<<<<<<< HEAD
           <p>التواصل: <a href={`tel:${PHONE_INTL}`} onClick={trackCall} style={{ color: "var(--color-gold)", fontWeight: 700 }}>{PHONE_DISPLAY}</a> · <a href={``} style={{ color: "var(--color-gold)" }}></a></p>
+=======
+          <p>التواصل: <a href={`tel:${PHONE_INTL}`} style={{ color: "var(--color-gold)", fontWeight: 700 }}>{PHONE_DISPLAY}</a> · <a href={``} style={{ color: "var(--color-gold)" }}></a></p>
+>>>>>>> 78ba3008a2fc000dfd1a3c94eb64472bf0c0f5a8
           <span className="agent-badge">وكيل مبيعات معتمد · Authorized Sales Agent</span>
         </div>
       </section>
