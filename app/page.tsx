@@ -157,7 +157,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero" id="hero">
-        <div className="hero-bg"><img src="/images/hacienda-hero.webp" alt="هاسيندا رأس الحكمة بالم هيلز الساحل الشمالي" /><div className="hero-overlay" /></div>
+        <div className="hero-bg"><img src="/images/hacienda-hero.webp" alt="هاسيندا رأس الحكمة بالم هيلز الساحل الشمالي" fetchPriority="high" /><div className="hero-overlay" /></div>
         <div className="hero-content">
           <span className="hero-badge">Palm Hills Developments</span>
           <h1 className="hero-title">هاسيندا رأس الحكمة</h1>
@@ -193,7 +193,7 @@ export default function Home() {
                 <div key={i} className="about-feature"><div className="about-feature-icon">{f.icon}</div><div><h3>{f.title}</h3><p>{f.desc}</p></div></div>
               ))}
             </div>
-            <div className="about-img"><img src="/images/hacienda-launching.webp" alt="هاسيندا رأس الحكمة - منظر جوي" /></div>
+            <div className="about-img"><img src="/images/hacienda-launching.webp" alt="هاسيندا رأس الحكمة - منظر جوي" loading="lazy" /></div>
           </div>
           <div className="stats-bar animate-in">
             {[
@@ -272,7 +272,7 @@ export default function Home() {
               { src: "/images/hacienda-master-plan.webp", cap: "هاسيندا رأس الحكمة - الماستر بلان" },
               { src: "/images/hacienda-beach.webp", cap: "شاطئ رأس الحكمة" },
             ].map((g, i) => (
-              <div key={i} className="gallery-item"><img src={g.src} alt={g.cap} /><div className="gallery-item-caption">{g.cap}</div></div>
+              <div key={i} className="gallery-item"><img src={g.src} alt={g.cap} loading="lazy" /><div className="gallery-item-caption">{g.cap}</div></div>
             ))}
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function Home() {
 
       {/* FACILITIES */}
       <section className="facilities" id="facilities">
-        <div className="facilities-bg"><img src="/images/hacienda-beach.webp" alt="Hacienda facilities" /></div>
+        <div className="facilities-bg"><img src="/images/hacienda-beach.webp" alt="مرافق هاسيندا رأس الحكمة - شاطئ بالم هيلز" loading="lazy" /></div>
         <div className="facilities-content animate-in">
           <div style={{ textAlign: "center" }}>
             <h3 className="section-title" style={{ color: "#fff", textAlign: "center" }}>المرافق والخدمات</h3>
@@ -309,7 +309,7 @@ export default function Home() {
           <h2 className="section-title" style={{ textAlign: "center" }}>الموقع</h2>
           <p className="section-desc center">رأس الحكمة، الساحل الشمالي - الكيلو 238</p>
           <div className="location-grid" style={{ textAlign: "right" }}>
-            <div className="location-img"><img src="/images/hacienda-master-plan.webp" alt="موقع هاسيندا رأس الحكمة" /></div>
+            <div className="location-img"><img src="/images/hacienda-master-plan.webp" alt="ماستر بلان وموقع هاسيندا رأس الحكمة الكيلو 238" loading="lazy" /></div>
             <div className="location-facts">
               {[{ t: "الكيلو 238", d: "على الطريق الساحلي الدولي" },{ t: "رأس الحكمة", d: "أحد أجمل شواطئ الساحل الشمالي" },{ t: "قريب من", d: "المطار الدولي والمارينا المخططة" }].map((f,i) => (
                 <div key={i} className="location-fact"><h4>{f.t}</h4><p>{f.d}</p></div>
