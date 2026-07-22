@@ -382,6 +382,7 @@ export default function Home() {
         <div className="section-inner animate-in" style={{ textAlign: "center" }}>
           <h2 className="section-title">سجل اهتمامك</h2>
           <p className="section-desc" style={{ color: "rgba(255,255,255,0.65)", margin: "0 auto" }}>املأ النموذج وسيتواصل معك مستشار المبيعات للحصول على آخر الأسعار وقائمة الوحدات</p>
+          <p style={{ color: "var(--color-gold-light)", fontSize: 13.5, fontWeight: 700, margin: "10px auto 0" }}>أسعار الشركة الرسمية — بدون أي عمولة من العميل · فريق مبيعات معتمد</p>
           <form className="contact-form" ref={formRef} onSubmit={(e: FormEvent) => { e.preventDefault(); submitForm(formRef, setFormStatus); }} style={{ textAlign: "right" }}>
             <input type="hidden" name="access_key" value={WEB3_KEY} />
             <input type="hidden" name="subject" value="Lead — هاسيندا رأس الحكمة بالم هيلز" />
@@ -415,17 +416,18 @@ export default function Home() {
       <footer className="footer">
         <div className="footer-inner">
           <img src="/images/palm-hills-logo-white.png" alt="Palm Hills Developments" className="footer-logo" />
-          <p className="footer-text"> وكيل معتمد من بالم هيلز للتطوير العقاري. هاسيندا رأس الحكمة، وجهة ساحلية فاخرة عند الكيلو 238 على الساحل الشمالي.</p>
+          <p className="footer-text">فريق مبيعات معتمد لمشروعات بالم هيلز — نوفر لك <b>نفس أسعار الشركة الرسمية بدون أي عمولة من العميل</b>، مع أولوية الوصول لأحدث وحدات هاسيندا رأس الحكمة عند الكيلو 238.</p>
           <div className="footer-links">
             <a className="footer-link" href={`tel:${PHONE_INTL}`} onClick={trackCall}><PhoneIcon /><span>اتصل بنا {PHONE_DISPLAY}</span></a>
             <a className="footer-link" href={WA_URL} target="_blank" rel="noopener" onClick={trackWhatsApp}><span>💬 واتساب</span></a>
           </div>
           <div className="footer-legal">
-            <button onClick={() => setShowPrivacy(true)} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 11, textDecoration: "underline", cursor: "pointer", fontFamily: "var(--font-sans)" }}>سياسة الخصوصية</button>
-            <a href="#about-agent">من نحن</a>
+            <a href="/about">من نحن</a>
+            <a href="/privacy">سياسة الخصوصية</a>
+            <a href="/disclaimer">إخلاء المسؤولية</a>
             <a href="#contact">تواصل معنا</a>
           </div>
-          <p className="footer-credit">© 2026  · وكيل معتمد من بالم هيلز للتطوير العقاري · جميع الأسعار استرشادية</p>
+          <p className="footer-credit">© 2026 · منصة تسويقية معتمدة — ليست الموقع الرسمي لبالم هيلز · جميع الأسعار استرشادية</p>
         </div>
       </footer>
 
